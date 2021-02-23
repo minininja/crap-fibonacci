@@ -7,6 +7,9 @@ print fib($factor) . "\n";
 sub fib
 {
 	my ($n) = @_;
+	if (0 == $n) {
+		return 0;
+	}
 	if (1 == $n || 2 == $n) {
 		return 1;
 	}
