@@ -4,7 +4,7 @@ class Fib {
   }
 
   public static long fib(long n) {
-    if (n == 0L || n == 1L) {
+    if (n < 2L) {
       return 1L;
     }
     return fib(n-1) + fib(n-2);
