@@ -1,7 +1,7 @@
 #include "stdio.h"
 
 long fib(int n) {
-  if (1 == n || 2 == n) {
+  if (n < 2) {
     return 1;
   }
   return fib(n-1) + fib(n-2);
